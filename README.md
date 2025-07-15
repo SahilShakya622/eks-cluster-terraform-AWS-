@@ -7,18 +7,18 @@ This project provisions a fully functional, production-ready Amazon EKS cluster 
 ## 📁 Folder Structure
 
 eks-cluster-terraform/
-├── main.tf # Root config to call modules and resources
-├── provider.tf # AWS provider setup
-├── outputs.tf # Output values for cluster info
-├── .gitignore # Ignore sensitive or local files
+├── main.tf
+├── provider.tf
+├── outputs.tf
 ├── modules/
-│ ├── vpc/
-│ │ ├── main.tf # VPC creation via AWS VPC module
-│ │ └── outputs.tf # Outputs vpc_id and private subnets
-│ └── eks/
-│ ├── main.tf # EKS creation using AWS EKS module
-│ ├── variables.tf # Inputs like vpc_id, subnets
-│ └── outputs.tf # Outputs like endpoint, IAM, node info
+│   ├── vpc/
+│   │   ├── main.tf
+│   │   └── outputs.tf
+│   └── eks/
+│       ├── main.tf
+│       ├── variables.tf
+│       └── outputs.tf
+
 
 
 ---
